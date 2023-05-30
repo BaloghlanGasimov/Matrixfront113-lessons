@@ -1,0 +1,53 @@
+.mynavbar{
+    
+    
+    background-color: #979595;
+}
+.mycontainer{
+    display: flex;
+    /* justify-content: space-between; */
+    height: 80px;
+    width: 100%;
+}
+img{
+    /* width: 200px; */
+    height: 80%;
+}
+.logo-part{
+    width: 30%;
+}
+.link-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 26%;
+}
+.hero{
+    height: 800px;
+    width: 100%;
+    background-color: pink;
+}
+
+.homelink{
+    cursor: pointer;
+    position: relative;
+}
+.homelink:hover .homehoverdiv{
+    opacity: 1;
+    z-index: 10;
+    top:100%;
+}
+
+
+.homehoverdiv{
+    opacity: 0;
+    z-index: -10;
+    position: absolute;
+    top:140%;
+    left:0;
+    width: 500px;
+    height: 400px;
+    background-color: blueviolet;
+    transition: 0.4s;
+}
