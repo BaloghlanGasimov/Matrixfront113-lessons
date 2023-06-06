@@ -1,0 +1,122 @@
+.mynavbar{
+    
+    
+    background-color: #979595;
+}
+.mycontainer{
+    display: flex;
+    /* justify-content: space-between; */
+    height: 80px;
+    width: 100%;
+}
+img{
+    /* width: 200px; */
+    height: 80%;
+}
+.logo-part{
+    width: 30%;
+}
+.link-part{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 26%;
+}
+.hero{
+    height: 800px;
+    width: 100%;
+    background-color: pink;
+}
+
+.homelink{
+    cursor: pointer;
+    position: relative;
+}
+.homelink:hover .homehoverdiv{
+    opacity: 1;
+    z-index: 10;
+    top:100%;
+}
+
+
+.homehoverdiv{
+    opacity: 0;
+    z-index: -10;
+    position: absolute;
+    top:140%;
+    left:0;
+    width: 500px;
+    height: 400px;
+    background-color: blueviolet;
+    transition: 0.4s;
+}
+
+
+.setting-part{
+    position: fixed;
+    top:200px;
+    right:0px;
+
+    width: 200px;
+    height: 200px;
+    /* background-color: red; */
+}
+
+.setting-card{
+    display: flex;
+    /* border-bottom: 1px solid white; */
+    transition: 0.2s;
+}
+.setting-card:hover .left-part{
+    opacity: 1;
+}
+.left-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    height:50px ;
+    background-color: green;
+    background-color: #333333;
+    color:white;
+    transition: 0.4s;
+    opacity: 0;
+}
+.right-part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height:50px ;
+    background-color: #333333;
+    color:white;
+    font-size: 20px;
+} 
+
+
+
+.goTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+
+    width: 50px;
+    height:50px;
+    border-radius:50%;
+    background-color: white;
+    background-color: #999999;
+    color:white;
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    transition: 0.2s;
+}
+
+.goTop:hover{
+    background-color: rgb(105, 5, 105);
+
+}
