@@ -1,0 +1,18 @@
+.myclockdiv{
+    width: 100%;
+    position: relative;
+    .saat{
+        width: 30%;
+    }
+    .eqreb{
+        position: absolute;
+
+        left:12%;
+        top:17%;
+
+        transform-origin: center 51px;
+
+        width: 35px;
+        height: 55px;
+    }
+}

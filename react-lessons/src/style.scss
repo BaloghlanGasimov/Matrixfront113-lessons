@@ -1,0 +1,12 @@
+// @import "blog";
+
+.blog{
+    background-color: red;
+}
+
+.card{
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}

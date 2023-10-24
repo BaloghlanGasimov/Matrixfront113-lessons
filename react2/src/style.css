@@ -1,0 +1,59 @@
+.home {
+  position: relative;
+}
+.home:hover .home-popup {
+  top: 100%;
+  opacity: 1;
+  z-index: 10;
+}
+.home .home-popup {
+  transition: 1s;
+  opacity: 0;
+  z-index: -100;
+  position: absolute;
+  left: 0;
+  top: 180%;
+  width: 300px;
+  height: 150px;
+  background-color: red;
+}
+
+.navbar {
+  background-color: pink;
+  display: flex;
+  justify-content: center;
+}
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+.navbar ul li {
+  margin-right: 18px;
+}
+
+.bos {
+  height: 400px;
+  background-color: blue;
+}
+
+.light .navbar {
+  background-color: pink;
+}
+
+.dark .navbar {
+  background-color: gray;
+}
+.dark .wrapper {
+  background-color: brown;
+}
+.dark .wrapper h2 {
+  color: white !important;
+}
+
+.wrapper {
+  background-color: yellow;
+}
+.wrapper h2 {
+  color: black;
+  height: 300px;
+}/*# sourceMappingURL=style.css.map */

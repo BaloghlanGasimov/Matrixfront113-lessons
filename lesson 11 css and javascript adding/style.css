@@ -1,0 +1,80 @@
+.mynavbar{
+    width: 100%;
+    height: 20vh;
+    background-color: gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mynavbar2{
+    position: relative;
+    width: 100%;
+    height: 20vh;
+
+    display: flex;
+
+    display: none;
+    background-color: blue;
+    justify-content: end;
+}
+.test{
+    position: absolute;
+    right:0;
+    top:0;
+    background-color: green;
+    width: 40%;
+    height: 100vh;
+    display: none;
+}
+
+.d-block{
+    display: block !important;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style-type: none;
+
+}
+li{
+    margin-right:8px ;
+    color:white
+}
+
+.bos{
+    height: 300vh;
+    width: 100%;
+    background-color: pink;
+}
+
+.menimAnimasiyam{
+    animation:navbarDizayn 3s 1s
+
+}
+@keyframes navbarDizayn {
+    0%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+}
+
+.fix{
+    position: fixed;
+    top:0;
+    left:0;
+}
+
+@media only screen and (max-width: 600px) {
+    .mynavbar{
+        display: none;
+    }
+    .mynavbar2{
+        display: flex;
+    }
+}

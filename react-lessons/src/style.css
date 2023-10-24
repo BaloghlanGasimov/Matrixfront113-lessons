@@ -1,0 +1,10 @@
+.blog {
+  background-color: red;
+}
+
+.card {
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=style.css.map */
