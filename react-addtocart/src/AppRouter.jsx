@@ -5,6 +5,7 @@ import Shop from './pages/Shop'
 import Navbar from './Navbar'
 import Cart from './Cart'
 import { CartProvider } from 'react-use-cart'
+import SignIn from './SignIn'
 
 const AppRouter = () => {
   return (
@@ -21,6 +22,7 @@ const AppRouter = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/shop' element={<Shop/>} />
         <Route path='/cart' element={<Cart/>} />
+        <Route path='/signIn' element={<SignIn/>}/>
         
       </Routes>
 

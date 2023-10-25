@@ -2,6 +2,17 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
+
+
+  if(localStorage.getItem("giris")==undefined){
+    localStorage.setItem("giris","signIn")
+  }
+
+  if(localStorage.getItem("adminlik")==undefined){
+    localStorage.setItem("adminlik",0);
+  }
+  
+  
   return (
     <div>
 
@@ -49,6 +60,74 @@ const Navbar = () => {
           </a>
         </li>
       </ul>
+
+
+
+
+      {localStorage.getItem("giris")=="signIn"
+      ?
+      <Link to='/signIn' >
+      <button className='btn btn-primary me-2' >Sign In</button>
+      </Link>
+      :
+
+      <>
+
+<div className="dropdown">
+  <button
+    className="btn btn-secondary dropdown-toggle"
+    type="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    {localStorage.getItem("giris")}
+  </button>
+  <ul className="dropdown-menu">
+    <li>
+      <a className="dropdown-item" href="#">
+        View Profile
+      </a>
+    </li>
+    <Link to='/signIn'>
+    <li>
+      <a className="dropdown-item" href="#">
+      Change User
+      </a>
+    </li>
+    </Link>
+
+    {localStorage.getItem("adminlik")==0
+    ?
+    <></>
+    :
+    <>
+    <Link to='/dashboard'>
+    <li>
+      <a className="dropdown-item" href="#">
+        Dashboard
+      </a>
+    </li>
+
+    </Link>
+    </>
+  }
+    
+
+
+    <li onClick={()=>{localStorage.setItem("giris","signIn");window.location.reload(true)}} >
+      <a className="dropdown-item" href="#">
+        Log Out
+      </a>
+    </li>
+  </ul>
+</div>
+
+      
+      </>
+      
+      }
+      
+      
       <div className="d-flex" role="search">
        <NavLink to='/cart' >
 
